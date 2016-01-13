@@ -1,0 +1,27 @@
+---
+component: responsive-topbar
+---
+{{!-- <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+  <button class="menu-icon" type="button" data-toggle></button>
+  <div class="title-bar-title">Menu</div>
+</div> --}}
+
+<div class="top-bar" id="example-menu">
+  <div class="top-bar-left">
+    <ul class="menu">
+      <li class="menu-text" role="menuitem"><a href="/">{{site.title}}</a></li>
+     
+    </ul>
+  </div>
+  <div class="top-bar-right">
+    <ul class="menu" role="menubar">
+  {{#each pages}}
+  {{#isnt data.title 'Home'}}
+   <li {{#if this.isCurrentPage}} class="active"{{/if}} role="menuitem">
+   <a href="{{relative dest this.dest}}">{{data.title}}</a>
+   </li>
+   {{/isnt}}
+  {{/each}}
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+<!doctype html>
+<html class="no-js landing-page" lang="en" >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Prototype | {{title}}</title>
+    <!-- build:css css/libraries.min.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css css/app.min.css -->
+    <link rel="stylesheet" href="css/app.css">
+    <!-- endbuild -->
+    <!-- build:js js/vendor/modernizr.min.js -->
+    
+    <!-- endbuild -->
+  </head>
+  <body>
+
+    {{> responsive-topbar }}
+
+    <div id="main" role="main">
+
+      {{> body }}
+
+    </div>
+{{>js}}
+  </body>
+</html>
