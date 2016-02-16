@@ -36,7 +36,7 @@ module.exports = function(grunt) {
         sass: {
             options: {
 
-                includePaths: ['<%= app %>/bower_components/foundation-sites/scss']
+                includePaths: ['<%= app %>/bower_components/foundation-sites/scss/']
             },
             dist: {
                 options: {
@@ -47,6 +47,8 @@ module.exports = function(grunt) {
                 }
             }
         },
+
+
 
         assemble: {
             pages: {

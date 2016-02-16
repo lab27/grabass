@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
 @import "settings";
-@import "../bower_components/foundation-sites/scss/foundation";
-@import "iconfont";
+@import "../bower_components/foundation-sites/assets/foundation-flex.scss";
+
+// @import "iconfont";
 @import "appstyles";
 @import "topbar";
